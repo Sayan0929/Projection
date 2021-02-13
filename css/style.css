@@ -287,8 +287,8 @@ footer p {
         flex-direction: column;
     }
 
-    .hero.active {
-        margin-top: 0;
+    .hero {
+        margin-top: 20%;
     }
 
     hr {
