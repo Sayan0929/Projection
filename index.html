@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projection</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="mega-container">
+    
+        <header>
+            <a href="" class="logo">Projection</a>
+            <div class="menu-toggle"></div>
+            <nav>
+                <ul>
+                    <li class="links"><a href="#home">Home</a></li>
+                    <li class="links"><a href="#generic">Generic</a></li>
+                    <li class="links"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="clearfix"></div>
+        </header>
+
+            <div class="container">
+
+                <section class="hero"  id="home">
+                    <h1>Welcome To Projection</h1>
+
+                    <div class="info3">
+                        <div class="info">
+                            <span class="fa fa-car cuties"></span>
+                            <h2>Aliquam</h2>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <hr>
+                        <div class="info">
+                            <span class="fa fa-camera cuties"></span>
+                            <h2>Elementum</h2>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                        <hr>
+                        <div class="info">
+                            <span class="fa fa-bug cuties"></span>
+                            <h2>Ultrices</h2>
+                            <p>Lorem, ipsum dolor.</p>
+                        </div>
+                    </div>
+
+                    <button onclick="sorry()">Get Started</button>
+                </section>
+        </div>
+
+    </div>
+    
+    <main id="generic">
+        <div class="container">
+            <div class="content2">
+                <div class="content">
+                    <img src="img/pic01.jpg" alt="">
+                    <h2>Lorem dolor ipsum amet</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas id beatae voluptatem, aspernatur provident ea sapiente odio veritatis iure.</p>
+                    <button onclick="sorry()">Learn More</button>
+                </div>
+                <div class="content">
+                    <img src="img/pic02.jpg" alt="">
+                    <h2>Sed feugiat tempus adipicsing</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum quas id beatae voluptatem, aspernatur provident ea sapiente odio veritatis iure.</p>
+                    <button onclick="sorry()">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer id="contact">
+        <div class="container">
+            <div class="separate">
+                <h2>Get In Touch</h2>
+            </div> 
+
+            <form action="#">
+                <div class="formcont">
+                    <div class="namewala">
+                        <label for="name">Name</label> <br>
+                        <input type="text" placeholder="Name" required>
+                    </div>
+
+                    <br>
+
+                    <div class="emailwala">
+                        <label for="email">Email</label> <br>
+                        <input type="email" placeholder="Email" required>
+                    </div>
+
+                </div>
+                
+                <br>
+
+                <label for="message">Message</label> <br>
+                <textarea name="message" cols="30" rows="10" placeholder="Message"></textarea>
+
+                <br><br>
+
+                <div class="center"><button>Send Message</button></div>
+            </form>
+
+            <p>&copy;2021 all rights reserved by ~SAYAN~</p>
+        </div>
+    </footer>
+
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+            $('.menu-toggle').click(function(){
+                $('.menu-toggle').toggleClass('active');
+                $('nav').toggleClass('active');
+                $('.hero').toggleClass('active');
+            });
+
+            $('nav ul li').click(function(){
+                $('.menu-toggle').toggleClass('active');
+                $('nav').toggleClass('active');
+                $('.hero').toggleClass('active');
+            });
+        });
+    </script>
+
+    <script>
+        function sorry(){
+            swal({
+            title: "Sorry",
+            text: "I didn't wrote anything (It's just a dummy button)",
+            icon: "info",
+            });
+        }
+    </script>
+</body>
+</html>
